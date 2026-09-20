@@ -1,12 +1,61 @@
-Replace this file with your unit-1 eval run.
+# eval run written by run_eval.py at 2026-09-20T22:18:53Z
+# model: sonnet (pinned)
+# graded: /home/sande/.claude/skills/issue-select/skill
+# packages: 20 scored
+#   rubric.md  sha256:3079227a06d10c1a
+#   SKILL.md  sha256:bbb295bf984701fd
+#
+grading 24 bundle(s) with rubric.md, model sonnet, 5 worker(s)...
+  issue-05: reject
+  issue-02: reject
+  issue-03: reject
+  issue-04: reject
+  issue-01: reject
+  issue-08: reject
+  issue-07: reject
+  issue-09: reject
+  issue-10: reject
+  issue-12: reject
+  issue-06: accept
+  issue-13: reject
+  issue-11: reject
+  issue-15: reject
+  issue-14: accept
+  issue-17: reject
+  issue-18: reject
+  issue-19: reject
+  calib-02: reject
+  issue-20: reject
+  calib-03: reject
+  calib-04: reject
+  calib-01: reject
+  issue-16: reject
 
-Generate it with `--save-run`: the harness writes this file itself, with
-a header recording the model, the tool it graded, and a fingerprint of
-each file in the run.
+item      gold    verdict  agree  note
+issue-01  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md: generative AI tools welcome, no ban on AI-generated contributions; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments in thread; maintained_active: pass — last push 2026-08-04, archived: no, last 5 commits are human-authored merged PRs from 2026-08-04; clear_scope: fail — Proposed changes require a new standalone docs page with ~8 content sections plus edits to 4 other files (manage-pkgs.rst, pip-interoperability.rst, new-features.md, troubleshooting.rst) — far more than 10 lines of change
+issue-02  reject  reject   yes    allow_ai: pass — No CONTRIBUTING.md exists in the repo, so no explicit AI ban is possible.; issue_unassigned: pass — assignees: none; linked PRs: none; comments contain no claim language.; maintained_active: fail — Most recent default-branch commit is 2023-12-09, over 600 days before the 2026-08-05 capture date, exceeding the 60-day threshold.
+issue-03  reject  reject   yes    allow_ai: pass — "contribution policy (.github/CONTRIBUTING.md): no statement on AI or contribution tooling; the repo ships AGENTS.md instructions for AI coding agents"; issue_unassigned: fail — DanielNoord (COLLABORATOR): "We are **not** looking for any other contributions other than @hamza-mobeen's PR: pylint-dev/pylint#10985"; linked PRs list is non-empty (6 entries)
+issue-04  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md: "no statement on AI or contribution tooling" — no explicit ban.; issue_unassigned: pass — "this issue: assignees: none; linked PRs: none"; 0 comments in thread.; maintained_active: pass — Last default-branch commit 2026-08-04 (1 day before capture), archived: no, merged human-authored PRs #521/#554/#551 dated 2026-08-04.; clear_scope: fail — Issue body is only "Including remove identity, fuse spiders, remove self loops, etc." — no Steps to Reproduce/Expected Behavior section, open-ended "etc.", and no LOC estimate given.; good_first_issue_label (preferred): pass — labels: ... "good first issue" ...
+issue-05  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md has no statement on AI or contribution tooling, so it does not explicitly ban AI-generated code.; issue_unassigned: fail — 12 linked PRs exist (several merged/open) and the comment thread has repeated 'I would like to work on/add...' claims from multiple contributors, violating the 'no claim comments AND no linked PRs' condition.
+issue-06  accept  accept   yes    allow_ai: pass — contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling; issue_unassigned: pass — this issue: assignees: none; linked PRs: none; Comments (0 total, first 0 shown); maintained_active: pass — last default-branch commit 2026-07-14 (22 days before capture 2026-08-05); archived: no; PRs #289-291 merged 2026-07-13/14; clear_scope: pass — explicit Acceptance Criteria checklist plus 'Where to start' pointing to two specific component directories, indicating a narrow fix under 10 lines; good_first_issue_label (preferred): pass — labels: bug, good first issue, help wanted, easy, high-priority
+issue-07  reject  reject   yes    allow_ai: pass — Repo facts: 'no CONTRIBUTING.md in the repo; no stated policy' — no file, no explicit ban.; issue_unassigned: pass — 'this issue: assignees: none; linked PRs: none' and comment thread is empty (0 total).; maintained_active: fail — Most recent default-branch commit is 2025-02-10 (last push 2025-02-27), well over 60 days before the capture date.
+issue-08  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md AI use policy states AI tools are allowed, with no explicit ban on AI-generated code.; issue_unassigned: fail — Assignee field is 'piyushagarwal-55', a linked open PR (#39811) exists, and the assignee commented 'I would like to work on this.'
+issue-09  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md 'Generative AI' section: generative AI tools welcome, no ban on AI-generated contributions.; issue_unassigned: fail — MesaJonathan commented 'I'd like to take a swing at this as my first open-source contribution... Does it need to be assigned to me?' and jakirkham replied 'Think you can just give it a try if you are interested' — a claim variant present, plus a linked PR (#11627) exists.
+issue-10  reject  reject   yes    allow_ai: fail — CONTRIBUTING.md: "strongly discourages generative AI for new pages ... pull requests suspected of being made wholly or partly with generative AI or machine translation without human review are closed"
+issue-11  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md has no statement on AI or contribution tooling, so no explicit ban exists.; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments in thread, so no claim exists.; maintained_active: pass — Last 5 default-branch commits dated 2026-08-04 (1 day before capture), including merged human-authored PRs; archived: no.; clear_scope: unclear — Issue body lacks a 'Steps to Reproduce' or 'Expected Behavior' section and gives no estimated lines-of-code figure, so the LOC<10 condition cannot be verified.
+issue-12  reject  reject   yes    allow_ai: fail — CONTRIBUTING.md: 'We do not accept AI-generated code or documentation.'
+issue-13  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md: no statement on AI or contribution tooling; issue_unassigned: fail — linked PRs: kubernetes/minikube#23438 (open); kubernetes/minikube#23439 (open) — violates 'No linked PRs' condition
+issue-14  accept  accept   yes    allow_ai: pass — CONTRIBUTING.md has no statement on AI or contribution tooling — no explicit ban.; issue_unassigned: pass — assignees: none; linked PRs: none; comment thread has 0 comments.; maintained_active: pass — archived: no; last push 2026-08-05; last 5 commits (2026-08-01 to 2026-08-05) are human-authored merged PRs within 60 days.; clear_scope: pass — Numbered 6-file change list with exact lines and a verification grep step; ~8 lines of total diff, under the 10-line threshold.; good_first_issue_label (preferred): pass — labels: documentation, good first issue
+issue-15  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md: 'AI tools allowed; contributors must personally understand, test, and be able to explain every change' — no outright ban on AI-generated code.; issue_unassigned: fail — Linked PRs present (#20840, #23123, both closed) plus repeated claim/'can I take this' comments (e.g. madrix01: 'can i work on this issue ??'; blackbird7112: 'I have worked on this issue and I have made a PR. Review is pending') — violates the 'no comments' and 'no linked PRs' conditions.
+issue-16  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md Generative AI section: 'generative AI tools welcome'; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments; maintained_active: pass — archived: no; last default-branch commit 2026-08-04, human-authored PRs merged same day; clear_scope: unclear — No 'Steps to Reproduce'/'Expected Behavior' headers, and no evidence in the bundle to estimate lines-of-code change (<10) for the fix
+issue-17  reject  reject   yes    allow_ai: pass — No CONTRIBUTING.md exists in the repo; no stated policy banning AI tools.; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments in thread.; maintained_active: fail — Repo archived: yes; last default-branch commit 2021-11-13, far beyond the 60-day window as of 2026-09-20.
+issue-18  reject  reject   yes    allow_ai: pass — Repo facts: "contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling" — no explicit ban.; issue_unassigned: fail — Linked PRs include open ones (#9685, #10371, #11656, LennyMalcolm0/excalidraw#314) and multiple comments claiming the issue ("is anyone working on this, or can i pick this up?" — pran01; "I'd like to work on this, could I get it assigned to me?" — Abhishek-Jatav; "I'd like to take up this issue" — vishnukumar650).
+issue-19  accept  reject   NO     allow_ai: pass — contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling; issue_unassigned: pass — this issue: assignees: none; linked PRs: none; Comments (0 total); maintained_active: pass — last default-branch commit 2026-08-04, archived: no, merged PRs #521/#554/#551 by human authors same date; clear_scope: fail — body lists two 'potential causes which should be fixed' plus multiprocessing/threading suggestions — no Steps to Reproduce/Expected Behavior and not a sub-10-line fix
+issue-20  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md: 'no statement on AI or contribution tooling' — no explicit ban on AI-generated code.; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments total, so no claim-of-work text exists.; maintained_active: pass — Last default-branch commit 2026-08-04 (repo archived: no), with human-authored merges (dwelle, yanrin13, nihaarsirikonda) in that window.; clear_scope: fail — Issue asks for a new toolbar shape/element type with placement, resize, move, and export support — a multi-file feature, not an estimated <10-line change.; good_first_issue_label (preferred): fail — labels: none — no 'good first issue' or 'help wanted' label present.
+calib-01  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md AI Usage Policy: 'assistive AI use is allowed' provided contributor takes responsibility; only fully AI-generated contributions are barred.; issue_unassigned: pass — 'this issue: assignees: none; linked PRs: none' and 0 comments in thread.; maintained_active: pass — Last push 2026-08-04 (1 day before capture), archived: no, and last 5 commits include merged human PRs from contributor Nixxx19.; clear_scope: fail — Reporter states 'This is not an exact bug report, but a request' for restoring removed variadic-argument support in min/max — an undecided API/design question, not a bounded fix, with no maintainer input (0 comments).
+calib-02  reject  reject   yes    allow_ai: pass — "contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling"; issue_unassigned: fail — "this issue: assignees: amh1k; linked PRs: kubernetes/minikube#23440 (open)" and comment "amh1k (NONE) on 2026-08-04: /assign"
+calib-03  reject  reject   yes    allow_ai: pass — CONTRIBUTING.md has 'no statement on AI or contribution tooling' — no explicit ban.; issue_unassigned: fail — Repo facts list five open linked PRs for this issue (#1900, #1903, #1908, #1911, #1916), violating the 'No linked PRs' condition.
+calib-04  reject  reject   yes    allow_ai: pass — contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling; issue_unassigned: fail — Xavrir (CONTRIBUTOR) on 2026-03-07: "I'm working on this and plan to open a PR implementing an opt-in flag with integration tests," followed by "Opened PR #3617 implementing --fallback-syntax ... with integration tests"
 
-    python3 run_eval.py <your flags> --save-run eval-run.txt
-
-A partial `--limit` or `--only` run refuses to write the file, so only a
-complete run can land here. Do not hand-edit it: the story of the runs it
-took belongs in this unit's write-up, in the four fields below it:
-Run history, Issue analysis, Check rationale, and Trade-offs.
+categories: claimed 4/4  clear-accept 2/8  dead-repo 3/3  policy 1/1  scope 4/4
+agreement: 14/20 scored items  (bar: 18/20: below the bar)
