@@ -124,6 +124,23 @@ agreement: 1/1 scored items
 full results written to issue-14-verdict.json
 ```
 
+<!--
+Disagreements on Accepted:
+
+item      gold    verdict  agree  note
+
+issue-01  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md: generative AI tools welcome, no ban on AI-generated contributions; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments in thread; maintained_active: pass — last push 2026-08-04, archived: no, last 5 commits are human-authored merged PRs from 2026-08-04; clear_scope: fail — Proposed changes require a new standalone docs page with ~8 content sections plus edits to 4 other files (manage-pkgs.rst, pip-interoperability.rst, new-features.md, troubleshooting.rst) — far more than 10 lines of change
+
+issue-04  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md: "no statement on AI or contribution tooling" — no explicit ban.; issue_unassigned: pass — "this issue: assignees: none; linked PRs: none"; 0 comments in thread.; maintained_active: pass — Last default-branch commit 2026-08-04 (1 day before capture), archived: no, merged human-authored PRs #521/#554/#551 dated 2026-08-04.; clear_scope: fail — Issue body is only "Including remove identity, fuse spiders, remove self loops, etc." — no Steps to Reproduce/Expected Behavior section, open-ended "etc.", and no LOC estimate given.; good_first_issue_label (preferred): pass — labels: ... "good first issue" ...
+
+issue-09  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md 'Generative AI' section: generative AI tools welcome, no ban on AI-generated contributions.; issue_unassigned: fail — MesaJonathan commented 'I'd like to take a swing at this as my first open-source contribution... Does it need to be assigned to me?' and jakirkham replied 'Think you can just give it a try if you are interested' — a claim variant present, plus a linked PR (#11627) exists.
+
+issue-11  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md has no statement on AI or contribution tooling, so no explicit ban exists.; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments in thread, so no claim exists.; maintained_active: pass — Last 5 default-branch commits dated 2026-08-04 (1 day before capture), including merged human-authored PRs; archived: no.; clear_scope: unclear — Issue body lacks a 'Steps to Reproduce' or 'Expected Behavior' section and gives no estimated lines-of-code figure, so the LOC<10 condition cannot be verified.
+
+issue-16  accept  reject   NO     allow_ai: pass — CONTRIBUTING.md Generative AI section: 'generative AI tools welcome'; issue_unassigned: pass — assignees: none; linked PRs: none; 0 comments; maintained_active: pass — archived: no; last default-branch commit 2026-08-04, human-authored PRs merged same day; clear_scope: unclear — No 'Steps to Reproduce'/'Expected Behavior' headers, and no evidence in the bundle to estimate lines-of-code change (<10) for the fix
+
+issue-19  accept  reject   NO     allow_ai: pass — contribution policy (CONTRIBUTING.md): no statement on AI or contribution tooling; issue_unassigned: pass — this issue: assignees: none; linked PRs: none; Comments (0 total); maintained_active: pass — last default-branch commit 2026-08-04, archived: no, merged PRs #521/#554/#551 by human authors same date; clear_scope: fail — body lists two 'potential causes which should be fixed' plus multiprocessing/threading suggestions — no Steps to Reproduce/Expected Behavior and not a sub-10-line fix
+-->
 
 **Check rationale**
 
