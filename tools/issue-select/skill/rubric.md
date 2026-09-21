@@ -37,7 +37,7 @@ will fail eval issues designed around that family.
 | allow_ai | The `CONTRIBUTING.md` file text. | The file does not explicitly ban the use of AI-generated code or LLM tools. | Required |
 | issue_unassigned | The issue `assignee` field and the comment thread text. | The issue `assignee` field is null/empty AND no comments contain text variants of "I'm working on this" or "can I take this". No linked PRs. | Required |
 | maintained_active | The last default-branch commit dates and the repository's archived status flag. | The most recent default-branch commit is within the last 60 days AND the repository archived status is false. Human authored PRs have been merged in last 60 days. | Required |
-| clear_scope | The issue description body text and the comments. | The issue description contains a "Steps to Reproduce" OR "Expected Behavior" OR has clear outcome. Estimated lines of code change is less than 10. | Required |
+| clear_scope | The issue description body text and the comments. | The issue description contains a "Steps to Reproduce" OR "Expected Behavior" OR has clear outcome. Estimated lines of code change is less than 10. | Preferred |
 | good_first_issue_label | The issue `labels` list. | The labels list contains at least one of the following: "good first issue", "good-first-issue", "first-issue", or "help wanted". | Preferred |
 
 
